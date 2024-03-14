@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=*, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+	<header>
+		<div class="game-name">
+			<img src="image/rock-paper-scissors.png"  alt="rock paper scissors game image"/>
+			<h1>Rock Paper Scissors</h1>
+			<img src="image/rock-paper-scissors.png"  alt="rock paper scissors game image"/>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="player">
+			<h2>Player</h2>
+			<div class="player-content">
+				<div class="rock">
+					<button class="rock-button" onclick="addBorderAndPlay(this, 'rock')">
+						<img src="image/stone.png" id="playrock" alt="rock image"/>
+					</button>
+				</div>
+				<div class="paper">
+					<button class="paper-button" onclick="addBorderAndPlay(this, 'paper')">
+						<img src="image/file.png" id="playpaper" alt="paper image"/>
+					</button>
+				</div>
+				<div class="scissors">
+					<button class="scissors-button" onclick="addBorderAndPlay(this, 'scissors')">
+						<img src="image/scissor.png" id="playscissors" alt="scissors">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mid">
+			<h2>Scores</h2>
+			<div class="score" id="score">
+				<div id="player-score" class="player-score"> Player : 0
+				</div>
+				<div id="computer-score" class="computer-score"> Computer : 0
+				</div>
+			</div>
+			<div class="result" id="result">
+				<div id="player-choice" class="player-choice"></div>
+				<div id="computer-choice" class="computer-choice"></div>
+				<div id="winner" class="winner"></div>
+			</div>
+		</div>
+
+		<div class="computer">
+			<h2>Computer</h2>
+			<div class="computer-content">
+				<div class="rock">
+					<img src="image/stone.png" id="rock" alt="rock image"/>
+				</div>
+				<div class="paper">
+					<img src="image/file.png" id="paper" alt="paper image"/>
+				</div>
+				<div class="scissors">
+					<img src="image/scissor.png" id="scissors" alt="scissors">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
